@@ -1,22 +1,15 @@
 <template>
-
-  <div>
-
-    <p>This is card</p>
-  <p>This is is message from parrent {{ user}}</p>
-  
-
+  <div class="flex flex-col items-center rounded " :style="{backgroundColor:bgColor}">
+    <img :src="img" alt="">
+    <span>{{ title }}</span>
+    <span class="text-gray-500">{{ quantity }}</span>
   </div>
 </template>
 <style>
 </style>
 <script>
-  import { inject } from 'vue'
+export default{
+  props:['bgColor','img','title','quantity']
+}
 
-  export default{
-    setup(){
-      const user = inject('name')
-      return {user}
-    }
-  }
 </script>

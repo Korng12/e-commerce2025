@@ -1,13 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Greeting  from './components/Greeting.vue';
+import Category from './components/Category.vue';
 
 </script>
 
 <template>
   <div>
-    <p>
-      This is my first vue project
-    </p>
+    <category></category>
+  
   </div>
 </template>
