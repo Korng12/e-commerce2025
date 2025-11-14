@@ -1,15 +1,17 @@
 <template>
-  <div class="flex flex-col items-center rounded " :style="{backgroundColor:bgColor}">
-    <img :src="img" alt="">
-    <span>{{ title }}</span>
-    <span class="text-gray-500">{{ quantity }}</span>
+  <div class="flex flex-col items-center rounded p-4" :style="{backgroundColor:color}">
+    <img :src="image" class="w-64" alt="">
+    <span>{{ name}}</span>
+    <span class="text-gray-500">{{ productCount }}</span>
+    <span>{{ color }}</span>
   </div>
 </template>
 <style>
 </style>
 <script>
+
 export default{
-  props:['bgColor','img','title','quantity']
+  props:['name','productCount','color','image']
 }
 
 </script>
