@@ -20,6 +20,7 @@ return new class extends Migration
             $table->jsonb('images')->nullable();
             $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
+            
         });
     }
 
